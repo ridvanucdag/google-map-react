@@ -1,0 +1,163 @@
+.mapSelectContainer {
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+.mapScreenContainer {
+  position: relative;
+  height: 240px;
+  width: 100%;
+  .mapScreenMap {
+    position: absolute;
+    height: 226px;
+    width: 100%;
+  }
+}
+.map-marker {
+  .location-marker {
+    color: red;
+    height: 40px;
+    width: 40px;
+  }
+}
+.user-location-marker {
+  position: absolute;
+  background-color: white;
+  height: 26px;
+  width: 26px;
+  border: 1px solid #1a73e8;
+  border-radius: 30px;
+  box-shadow: 0px 2px 20px rgba(26, 115, 232, 0.48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  &-center {
+    background-color: #1a73e8;
+    height: 16px;
+    width: 16px;
+    border-radius: 30px;
+  }
+}
+.locationIcon {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid red;
+  height: 40px;
+  width: 306px;
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  z-index: 5;
+  .icon-info {
+    color: red;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.custom-message {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid blue;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  z-index: 5;
+}
+
+.currenLocation {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid blue;
+  height: 30px;
+  border-radius: 5px;
+  color: red;
+  &:hover {
+    cursor: pointer;
+    color: rgb(182, 53, 53);
+  }
+}
+
+.NearMeContainer {
+  &:hover {
+    cursor: pointer;
+  }
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid blue;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .NearMeIcon {
+    color: red;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.zoomContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid red;
+  margin-bottom: -12px;
+  border-radius: 4px;
+}
+.zoomMinus {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #f2f2f2;
+}
+.zoomButtonStyle {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 431px) {
+  .NearMeContainer {
+    display: none;
+  }
+
+  .NearMeIcon {
+    color: #e91d34;
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 430px) {
+  .currenLocation {
+    display: none;
+  }
+}
