@@ -1,8 +1,8 @@
 # Google map React
 
-![](src/image1.jpg)
+![](src/image1.png)
 
-![](src/image2.jpg)
+![](src/image2.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
